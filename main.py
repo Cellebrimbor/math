@@ -24,4 +24,3 @@ while True:
         break
 
     os.system('clear')
-1
