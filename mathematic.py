@@ -21,4 +21,3 @@ def calculation(input_: str, x: float) -> list:
 
     safe_dict['__builtins__'] = None
     return (x, eval(input_, safe_dict))
-print(calculation('x**2',-2))
