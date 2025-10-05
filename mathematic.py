@@ -9,7 +9,7 @@ def normalize_input(input_: str) -> str:
 def calculation(input_: str, x: float) -> list:
     ''' Подставляет конкретный х в выражение и 
     выдает пару [x,значение выражения] '''
-    input_ = normalize_input(input_)
+    input_ = normalize_input(str(input_)) # обернем input_ в str чтобы избежать проблем при исп sympy
     input_ = input_.replace('x', '('+str(x)+')')
     safe_dict = {
         'abs': abs, 'max': max, 'min': min, 'pow': pow, 'round': round,
